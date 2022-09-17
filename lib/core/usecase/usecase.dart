@@ -4,3 +4,5 @@ import 'package:favorite_meal/core/error/failure.dart';
 abstract class Usecase<Type, Params> {
   Future<Either<Failure, Type>> call(Params params);
 }
+
+class NoParams {}

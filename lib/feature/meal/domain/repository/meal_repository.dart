@@ -4,4 +4,5 @@ import 'package:favorite_meal/feature/meal/domain/entities/meal.dart';
 
 abstract class MealRepository {
   Future<Either<Failure, List<Meal>>> getMealList(String search);
+  Future<Either<Failure, Meal>> getMealById(String id);
 }
